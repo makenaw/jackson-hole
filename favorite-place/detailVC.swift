@@ -1,5 +1,5 @@
 //
-//  DetailsController.swift
+//  detailVC.swift
 //  favorite-place
 //
 //  Created by makena  on 1/14/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailsController: UIViewController {
+class detailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +21,6 @@ class DetailsController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func backBtnPressed(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
 
     /*
     // MARK: - Navigation
