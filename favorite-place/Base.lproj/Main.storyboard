@@ -140,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="148"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="d7r-GC-F4B"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="d7r-GC-F4B"/>
                                     <constraint firstAttribute="height" priority="900" constant="148" id="vL7-fX-0fG"/>
                                 </constraints>
                                 <variation key="default">
@@ -174,58 +174,105 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C04-Ao-qpp">
-                                <rect key="frame" x="20" y="192" width="144" height="35"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="300" verticalCompressionResistancePriority="300" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-CI-teK" userLabel="parent stack">
+                                <rect key="frame" x="20" y="176" width="560" height="192"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1zx-mg-wnB" userLabel="hist stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="525.5" height="72"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="350" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C04-Ao-qpp">
+                                                <rect key="frame" x="0.0" y="0.0" width="525.5" height="24"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.36470352564102559" green="0.36470352564102559" blue="0.36470352564102559" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pE-Fu-nFx">
+                                                <rect key="frame" x="0.0" y="29" width="525.5" height="43"/>
+                                                <animations/>
+                                                <string key="text">The first people to settle the region were Native Americans, then fur trappers, and then homesteaders. Because the soil is not ideal for raising crops, the valley was used for cattle. Tourism quickly became popular with the establishment of dude ranches.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" red="0.36470352560000002" green="0.36470352560000002" blue="0.36470352560000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0zK-Ty-T2e" userLabel="geog stack">
+                                        <rect key="frame" x="0.0" y="77" width="560" height="115"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GEOGRAPHY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-Fm-ARH">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="24"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.36470352560000002" green="0.36470352560000002" blue="0.36470352560000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-iX-2i1">
+                                                <rect key="frame" x="0.0" y="29" width="560" height="86"/>
+                                                <animations/>
+                                                <string key="text">The valley is formed by the Teton Range on the western side and the Gros Ventre Range on the eastern side. Grand Teton National Park occupies the north-western part of the valley encompassing much of the Teton Range as well as Jackson Lake. The town of Jackson, Wyoming, is at the southern end. Between them lies, on U.S. Route 26, "Glacier View Turnout" offering a view of Teton Glacier on the north of Grand Teton,[3] and the National Elk Refuge, home of the largest elk herd on earth. </string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                <color key="textColor" red="0.36470352560000002" green="0.36470352560000002" blue="0.36470352560000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="0.36470352564102559" green="0.36470352564102559" blue="0.36470352564102559" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GEOGRAPHY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-Fm-ARH">
-                                <rect key="frame" x="20" y="307" width="144" height="35"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="0.36470352560000002" green="0.36470352560000002" blue="0.36470352560000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOREM IPsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pE-Fu-nFx">
-                                <rect key="frame" x="20" y="235" width="144" height="35"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.36470352560000002" green="0.36470352560000002" blue="0.36470352560000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOREM IPsum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNK-iX-2i1">
-                                <rect key="frame" x="20" y="350" width="144" height="35"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
-                                <color key="textColor" red="0.36470352560000002" green="0.36470352560000002" blue="0.36470352560000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0zK-Ty-T2e" secondAttribute="bottom" id="MbJ-PT-MGF"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MbJ-PT-MGF"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5OI-E0-88h" firstAttribute="top" secondItem="GYz-Qe-rDs" secondAttribute="bottom" constant="39" id="3Wo-CP-seB"/>
                             <constraint firstItem="Fu8-Vv-o5m" firstAttribute="leading" secondItem="5OI-E0-88h" secondAttribute="trailing" constant="150" id="4rG-Wg-hp3"/>
+                            <constraint firstItem="cEn-CI-teK" firstAttribute="leading" secondItem="IBq-0Z-G9b" secondAttribute="leadingMargin" id="Crp-Lu-eek"/>
+                            <constraint firstItem="cEn-CI-teK" firstAttribute="top" secondItem="oxi-re-FaO" secondAttribute="bottom" id="LBi-gK-qQ7">
+                                <variation key="heightClass=compact" constant="70"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="oxi-re-FaO" secondAttribute="trailing" id="LPl-wK-CIY"/>
+                            <constraint firstItem="c5Q-uB-H1h" firstAttribute="top" secondItem="cEn-CI-teK" secondAttribute="bottom" id="ODw-Q2-gKL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cEn-CI-teK" secondAttribute="trailing" id="OuM-rx-n78"/>
+                            <constraint firstItem="c5Q-uB-H1h" firstAttribute="top" secondItem="cEn-CI-teK" secondAttribute="bottom" id="S5s-aV-3IJ"/>
                             <constraint firstItem="5OI-E0-88h" firstAttribute="leading" secondItem="IBq-0Z-G9b" secondAttribute="leadingMargin" constant="-11" id="Uya-R1-0qk"/>
                             <constraint firstItem="oxi-re-FaO" firstAttribute="top" secondItem="IBq-0Z-G9b" secondAttribute="top" id="Y62-uH-Vgf"/>
                             <constraint firstItem="Fu8-Vv-o5m" firstAttribute="centerX" secondItem="IBq-0Z-G9b" secondAttribute="centerX" id="Z6L-4V-77h"/>
+                            <constraint firstItem="cEn-CI-teK" firstAttribute="top" secondItem="oxi-re-FaO" secondAttribute="bottom" constant="28" id="ZTV-sH-kHe"/>
                             <constraint firstItem="Fu8-Vv-o5m" firstAttribute="centerY" secondItem="5OI-E0-88h" secondAttribute="centerY" id="f06-2j-7FB"/>
                             <constraint firstItem="Fu8-Vv-o5m" firstAttribute="centerY" secondItem="IBq-0Z-G9b" secondAttribute="centerY" id="kCp-nQ-frl"/>
                             <constraint firstItem="oxi-re-FaO" firstAttribute="leading" secondItem="IBq-0Z-G9b" secondAttribute="leading" id="pFv-aD-7WA"/>
                             <constraint firstItem="5OI-E0-88h" firstAttribute="centerY" secondItem="IBq-0Z-G9b" secondAttribute="centerY" id="q2N-Ro-SaR"/>
                             <constraint firstItem="Fu8-Vv-o5m" firstAttribute="centerY" secondItem="5OI-E0-88h" secondAttribute="centerY" id="wQI-RW-qSU"/>
+                            <constraint firstItem="cEn-CI-teK" firstAttribute="centerX" secondItem="IBq-0Z-G9b" secondAttribute="centerX" id="yQd-Ic-PIi"/>
                             <constraint firstItem="Fu8-Vv-o5m" firstAttribute="centerY" secondItem="IBq-0Z-G9b" secondAttribute="centerY" id="zlF-t2-7OL"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="q2N-Ro-SaR"/>
+                                <exclude reference="LBi-gK-qQ7"/>
+                                <exclude reference="yQd-Ic-PIi"/>
                                 <exclude reference="4rG-Wg-hp3"/>
                                 <exclude reference="f06-2j-7FB"/>
                                 <exclude reference="kCp-nQ-frl"/>
                                 <exclude reference="zlF-t2-7OL"/>
+                                <exclude reference="ODw-Q2-gKL"/>
+                                <exclude reference="S5s-aV-3IJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="LBi-gK-qQ7"/>
+                                <exclude reference="ZTV-sH-kHe"/>
                             </mask>
                         </variation>
                     </view>
