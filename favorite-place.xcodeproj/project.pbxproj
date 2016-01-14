@@ -15,6 +15,7 @@
 		F6C3E1BC1C463A7700FC8D88 /* favorite_placeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E1BB1C463A7700FC8D88 /* favorite_placeTests.swift */; };
 		F6C3E1C71C463A7700FC8D88 /* favorite_placeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E1C61C463A7700FC8D88 /* favorite_placeUITests.swift */; };
 		F6F53A2B1C47349F00813907 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F53A2A1C47349F00813907 /* DetailsController.swift */; settings = {ASSET_TAGS = (); }; };
+		F6F53A2D1C473B6B00813907 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F53A2C1C473B6B00813907 /* PhotoController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F6C3E1C61C463A7700FC8D88 /* favorite_placeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favorite_placeUITests.swift; sourceTree = "<group>"; };
 		F6C3E1C81C463A7700FC8D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6F53A2A1C47349F00813907 /* DetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		F6F53A2C1C473B6B00813907 /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,13 @@
 		F6C3E1A51C463A7700FC8D88 /* favorite-place */ = {
 			isa = PBXGroup;
 			children = (
+				F6F53A2E1C473B7600813907 /* controllers */,
 				F6C3E1A61C463A7700FC8D88 /* AppDelegate.swift */,
 				F6C3E1A81C463A7700FC8D88 /* ViewController.swift */,
 				F6C3E1AA1C463A7700FC8D88 /* Main.storyboard */,
 				F6C3E1AD1C463A7700FC8D88 /* Assets.xcassets */,
 				F6C3E1AF1C463A7700FC8D88 /* LaunchScreen.storyboard */,
 				F6C3E1B21C463A7700FC8D88 /* Info.plist */,
-				F6F53A2A1C47349F00813907 /* DetailsController.swift */,
 			);
 			path = "favorite-place";
 			sourceTree = "<group>";
@@ -126,6 +128,15 @@
 				F6C3E1C81C463A7700FC8D88 /* Info.plist */,
 			);
 			path = "favorite-placeUITests";
+			sourceTree = "<group>";
+		};
+		F6F53A2E1C473B7600813907 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6F53A2A1C47349F00813907 /* DetailsController.swift */,
+				F6F53A2C1C473B6B00813907 /* PhotoController.swift */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				F6C3E1A91C463A7700FC8D88 /* ViewController.swift in Sources */,
 				F6F53A2B1C47349F00813907 /* DetailsController.swift in Sources */,
+				F6F53A2D1C473B6B00813907 /* PhotoController.swift in Sources */,
 				F6C3E1A71C463A7700FC8D88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
